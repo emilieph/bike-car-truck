@@ -4,6 +4,15 @@ require_once 'Vehicle.php';
 class truck extends Vehicle
 {
 
+    /**
+    * @var string
+    */
+    protected $energy;
+
+    /**
+    * @var integer
+    */
+    protected $stockCapacity;
 
     public function __construct(string $color, int $nbSeats, string $energy, integer $stockCapacity)
     {
