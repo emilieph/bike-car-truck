@@ -4,25 +4,24 @@ require_once 'bcycle.php';
 $bike = new bicycle();
 var_dump($bike);
 
-$bike->color = "blue";
-$bike->currentSpeed = 0;
+$rockrider = new bicycle('red', 1);
+$bike->Setcolor = "red";
+$bike->SetcurrentSpeed = 1;
 var_dump($bike); // then, another dump.
 
 // Moving bike
 echo $bike->forward();
-echo '<br> Vitesse du vélo : ' . $bike->currentSpeed . ' km/h' . '<br>';
+echo '<br> Vitesse du vélo : ' . $bike->GetcurrentSpeed . ' km/h' . '<br>';
 echo $bike->brake();
-echo '<br> Vitesse du vélo : ' . $bike->currentSpeed . ' km/h' . '<br>';
+echo '<br> Vitesse du vélo : ' . $bike->GetcurrentSpeed . ' km/h' . '<br>';
 echo $bike->brake();
 
 // Instanciation d'un nouvel objet $rockrider
 
-$rockrider = new bicycle();
-$rockrider->color = 'yellow';
-
+$tornado = new bicycle('blue', 1);
 // Instanciation d'un nouvel objet $tornado
-$tornado = new bicycle();
-$tornado->color = 'black';
+$tornado->Setcolor = 'black';
+$bike->SetcurrentSpeed = 2;
 
 $tornado->forward();
 
