@@ -7,7 +7,6 @@ require_once 'Vehicle.php';
             'fuel',
             'electric',
         ];
-    {
 
     var_dump(Car::ALLOWED_ENERGIES);
 
@@ -20,6 +19,7 @@ require_once 'Vehicle.php';
      * @var int
      */
     private $energyLevel;
+        
 
     public function __construct(string $color, int $nbSeats, string $energy)
     {
