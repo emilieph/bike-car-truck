@@ -6,8 +6,8 @@ $bike = new bicycle();
 var_dump($bike);
 
 $rockrider = new bicycle('red', 1);
-$bike->seCcolor = "red";
-$bike->etCurrentSpeed = 1;
+$bike->setCcolor = "red";
+$bike->setCurrentSpeed = 0;
 var_dump($bike); // then, another dump.
 
 // Moving bike
@@ -19,21 +19,24 @@ echo $bike->brake();
 
 // Instanciation d'un nouvel objet $rockrider
 
-$tornado = new bicycle('blue', 1);
+$rockrider = new Bicycle('blue', 1);
+$rockrider->setColor('yellow');
+
 // Instanciation d'un nouvel objet $tornado
-$tornado->Setcolor = 'black';
-$bike->SetcurrentSpeed = 2;
+
+$tornado = new Bicycle('blue', 1);
+$tornado->setColor('black');
+
 
 $tornado->forward();
 
 var_dump($bike);
-$bike->dump();
+
 $bicycle = new Bicycle('blue', 1);
 echo $bicycle->forward();
+var_dump($bicycle);
 
-
-
-$car = new car();
+require_once 'Car.php';
+$car = new Car('blue', 1, 'fuel');
 var_dump($car);
-
 echo $car->forward();
