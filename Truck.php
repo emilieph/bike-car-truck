@@ -1,7 +1,7 @@
 <?php
 require_once 'Vehicle.php';
 
-class truck extends Vehicle
+class Truck extends Vehicle
 {
 
     /**
