@@ -8,8 +8,6 @@ require_once 'Vehicle.php';
             'electric',
         ];
 
-    var_dump(Car::ALLOWED_ENERGIES);
-
     /**
      * @var string
      */
