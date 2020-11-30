@@ -24,7 +24,7 @@
       * @var integer
       */
       public $nbWheels = 2;
-    }
+    
     public function forward()
     {
         $this->currentSpeed = 15;
@@ -40,4 +40,4 @@
        }
        $sentence .= "I'm stopped !";
        return $sentence;
-}
+  }
